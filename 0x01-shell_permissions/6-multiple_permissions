@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo ug+x o+r ./hello
+sudo ug+x,o+r hello
