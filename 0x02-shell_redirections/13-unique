@@ -1,2 +1,2 @@
-#!/bin/bash
-uniq -u | ls -1v
+#!/bin/bah
+tr '''\n' | sort | uniq -u
