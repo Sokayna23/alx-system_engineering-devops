@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -depth -type d -not \( -path "." -o -path ".."\) -print | wc 
+find . -depth -type d -not \( -path "." -o -path ".."\) -print | wc -l 
