@@ -1,0 +1,2 @@
+#!/bin/bash
+export DECIMAL=16 echo "$((10#$DECIMAL))"
