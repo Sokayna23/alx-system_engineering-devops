@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Nginx likes port 80
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+
+file="/etc/nginx/sites-enabled/default"
+
+sed -i 's/[0-9]\+ default_server/80 default_server/' "$file"
+
+# restart the service
+sudo service nginx restart
