@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-apt-get update
-apt-get install -y nginx
+# Make it sweet and short
 service nginx stop
 service nginx status
