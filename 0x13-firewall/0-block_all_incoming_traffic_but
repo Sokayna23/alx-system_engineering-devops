@@ -3,12 +3,11 @@
 
 sudo apt-get update
 sudo apt-get -y install ufw
+sudo ufw enable
 sudo ufw status
 sudo default deny incoming
 sudo default allow outgoing
 sudo ufw allow "22/tcp"
 sudo ufw allow "80/tcp"
 sudo ufw allow "443/tcp"
-echo "y" | sudo ufw enable
-sudo ufw status
-~                 
+sudo ufw status                 
