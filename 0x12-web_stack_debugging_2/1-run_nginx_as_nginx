@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Script that configures Nginx to run as nginx and to be listning on 
+#all active IPs on port 8080
+
+config = /etc/nginx/nginx.conf
+default = "/etc/nginx/sites_available/default"
+sudo sed -i 's/user\s*[^;]*;/user nginx;/g' "$config"
+sudo sed -i 's/listen\s*[^;]*;/listen 8080;/g' "$default" 
+
+sudo nginx -t
+sudo service nginx restart
